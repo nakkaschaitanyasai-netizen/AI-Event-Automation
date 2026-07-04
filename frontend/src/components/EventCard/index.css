@@ -1,0 +1,58 @@
+.card{
+    border-radius:15px;
+    border-color: red;
+    border-width:1px;
+    padding:15px;
+    margin:20px;
+    min-width: 400px;
+    max-width: 700px;
+}
+.delete-container{
+    text-align:end;
+}
+.delete-button{
+    color:#ffffff;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+}
+.eventName{
+    font-family:roboto;
+    font-size:23px;
+    font-weight:600;
+    color: red;
+    margin-top: 20px;
+}
+.event{
+    margin:5px;
+    color: rgb(8, 0, 255);
+    font-family:roboto;
+    font-size: 15px;
+    
+}
+.description{
+    font-family: roboto;
+    font-size: 19px;
+    color:#ffffff;
+}
+.location{
+    font-family: roboto;
+    font-size: 15px;
+    color:#ffffff;
+    text-align: end;
+    margin-top:10px;
+}
+.add-to-calendar-container{
+    text-align:end;
+    margin-top: 20px;
+}
+.calendar-btn{
+    background-color:rgb(0, 0, 145);
+    border-radius: 5px;
+    border-width: 0px;
+    color:#ffffff;
+    font-family:Roboto;
+    padding:5px;
+    cursor: pointer;
+}
