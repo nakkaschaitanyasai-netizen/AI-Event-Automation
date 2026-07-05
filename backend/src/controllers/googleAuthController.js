@@ -52,9 +52,9 @@ export const googleCallback = async (req, res) => {
     await users.findByIdAndUpdate(userId, {
       googleConnected: true,
     });
-    res.redirect("http://localhost:5173/?google=success");
+    res.redirect("https://ai-event-automation.vercel.app/?google=success");
   } catch (err) {
     console.error(err);
-    res.redirect("http://localhost:5173/?google=failure");
+    res.redirect("https://ai-event-automation.vercel.app/?google=failure");
   }
 };
