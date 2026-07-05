@@ -59,6 +59,7 @@ export default function Login() {
                 placeholder="Enter email"
                 className="input input-bordered w-full"
                 name="email"
+                autoComplete="email"
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -71,6 +72,7 @@ export default function Login() {
                 type="password"
                 placeholder="Enter password"
                 className="input input-bordered w-full"
+                autoComplete="current-password"
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
