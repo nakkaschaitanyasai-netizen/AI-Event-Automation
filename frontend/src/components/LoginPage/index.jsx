@@ -27,7 +27,7 @@ export default function Login() {
         body: JSON.stringify(formData),
       };
 
-      const url = `${import.meta.env.VITE_API_URL}/auth/login`;
+      const url = `${import.meta.env.VITE_API_URL}auth/login`;
       const response = await fetch(url, requestOptions);
       const data = await response.json();
       if (data.ok) {

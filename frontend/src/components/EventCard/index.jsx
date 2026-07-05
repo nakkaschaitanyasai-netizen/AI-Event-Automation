@@ -10,7 +10,7 @@ const EventCard = (props) => {
   };
   const addToCalendar = async () => {
     try {
-      let url = `${import.meta.env.VITE_API_URL}/calendar/${event._id}`;
+      let url = `${import.meta.env.VITE_API_URL}calendar/${event._id}`;
       const options = {
         method: "POST",
         headers: {

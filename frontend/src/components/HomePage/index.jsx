@@ -22,7 +22,7 @@ class HomePage extends Component {
         Authorization: `Bearer ${Cookie.get("token")}`,
       },
     };
-    const url = `${import.meta.env.VITE_API_URL}/api/events`;
+    const url = `${import.meta.env.VITE_API_URL}api/events`;
     const response = await fetch(url, options);
     const data = await response.json();
     this.setState({ Events: data.Events });
@@ -47,7 +47,7 @@ class HomePage extends Component {
           Authorization: `Bearer ${Cookie.get("token")}`,
         },
       };
-      const url = `${import.meta.env.VITE_API_URL}/api/events/${id}`;
+      const url = `${import.meta.env.VITE_API_URL}api/events/${id}`;
       const response = await fetch(url, options);
       const data = await response.json();
 
@@ -86,7 +86,7 @@ class HomePage extends Component {
                 onClick={async () => {
                   try {
                     const response = await fetch(
-                      `${import.meta.env.VITE_API_URL}/auth/google`,
+                      `${import.meta.env.VITE_API_URL}auth/google`,
                       {
                         headers: {
                           Authorization: `Bearer ${Cookie.get("token")}`,
@@ -161,7 +161,7 @@ class HomePage extends Component {
                                 },
                                 body: formData,
                               };
-                              const url = `${import.meta.env.VITE_API_URL}/api/upload`;
+                              const url = `${import.meta.env.VITE_API_URL}api/upload`;
                               const response = await fetch(url, options);
                               const data = await response.json();
                               if (data.ok) {
