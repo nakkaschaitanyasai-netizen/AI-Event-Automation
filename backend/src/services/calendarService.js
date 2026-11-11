@@ -9,7 +9,9 @@ const calendar = google.calendar({
 });
 
 export const createCalendarEvent = async (event) => {
-  const tokens = await GoogleToken.findOne();
+  const tokens = await GoogleToken.findOne({
+    user:event.user,
+  });
 
   if (!tokens) {
     throw new Error("Please login with Google first.");
